@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Link Disabler</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>PDF Link Disabler</h1>
+  <div>
+    <label for="pdfFile">Choose a PDF file:</label>
+    <input type="file" id="pdfFile" accept=".pdf">
+  </div>
+  <div class="buttons">
+    <button id="disableModified">Disable Links and Download Modified PDF</button>
+  </div>
+  <div id="status"></div>
+  <script src="libs/pdf-lib.min.js"></script>
+  <script src="popup.js" defer></script>
+</body>
+
+</html>
